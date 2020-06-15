@@ -32,10 +32,15 @@
         </ul>
     </div>
      <div id="content">
-      <h1>Data Servlet</h1>
-      <p>Click here to see message from sata servlet:</p>
-      <button onclick="getMessage()">Fetch a message!</button>
+      <h1>Comments</h1>
+            <form action="/data" method="POST">
+            <p>Comments?</p>
+            <textarea name="text-input">Enter any comments here...</textarea>
+            <br/><br/>
+            <input type="submit" />
+        </form>
+        <button onclick="getMessage()">Fetch a comments!</button>
       <div id="message-container"></div>
-    </div>
+      </div>
   </body>
 </html>
