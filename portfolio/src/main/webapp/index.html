@@ -8,11 +8,39 @@
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
+      <h1>Abi's Portfolio</h1>
       <p>This is my portfolio.</p>
+      <p>I am a rising junior at UC Santa Cruz. I am majoring in Computer Science and Cognitive Science. I love art and dancing.</p>
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
+      <p>Here's a little doodle I once drew</p>
+      <img src="images/drawing.jpg">
     </div>
+    <div id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>SnapJams - a web app which can recognize facial emotion and redirects the user to a playlist based on their mood</li>
+            <li>An Audio Reality for the Blind - a program which identified an image based on pixel comparison and relayed an audio out put describing the image</li>
+        </ul>
+    </div>
+    <div id="links">
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/abirami-patchaiyappan/">Linkedin</a></li>
+            <li><a href="https://github.com/abiirami">Github</a></li>
+        </ul>
+    </div>
+     <div id="content">
+      <h1>Comments</h1>
+            <form action="/data" method="POST">
+                <p>Comments?</p>
+                <textarea name="comment-input">Enter any comments here...</textarea>
+                <br/><br/>
+                <input type="submit" />
+            </form>
+        <button onclick="getMessage()">Fetch a comments!</button>
+      <div id="message-container"></div>
+      </div>
   </body>
 </html>
